@@ -2,8 +2,12 @@ print("Nova AI")
 print("Instructions: Type exit to shutdown")
 print("-" * 40)
 
-while 1 == 1:
+history = [" "]
+
+while True:
     user = input("user: ")
+
+    history.append("user")
 
     clean = user.lower().strip()
 
@@ -19,3 +23,5 @@ while 1 == 1:
 
     else:
         print(f"I dont understand {user}")
+
+print("history")
